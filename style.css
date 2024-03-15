@@ -1,0 +1,134 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Arial, Helvetica, sans-serif; font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+main
+{
+    width: 80%;
+    border: 2px solid rgb(232, 216, 232);
+    color: white;
+    margin: 4px auto;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 100px 60px 800px 800px 200px 200px;
+    grid-template-columns: repeat(3, 1fr)250px;
+    grid-gap: 3px;
+}
+
+.header{
+    background-color: rgb(234, 162, 219);
+    grid-column: 1/-1;
+   padding: 30px;
+
+}
+
+/* ST Navigation*/
+.nvber{
+    background-color: rgb(118, 164, 173);
+    grid-column: 1/-1;
+    display: flex; text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+.nvlist li{
+   display: inline-block;
+   font-family: arial black;
+    font-weight: bold; font-size: 16px;
+    border: 3px solid wheat;
+    width: 150px;
+    height: 30px;
+    line-height: 26px;
+    float: left;
+    text-transform: uppercase;
+
+}
+.nvlist li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nvlist li:hover {
+    background-color: rgb(2, 227, 252);
+    transition:cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.5s;
+}
+
+
+/* End Navigation*/
+.sideber{
+    background-color: rgb(217, 188, 245);
+    grid-row: 3/5;
+    
+
+}
+
+.content{
+    background-color: orange;
+    grid-column: 2/5;
+    grid-row: 3/5;
+
+    overflow: scroll;
+}
+
+.box1{
+    background-color: rgb(217, 217, 61);
+}
+
+.box2{
+    background-color: rgb(49, 49, 22);
+}
+
+.box3{
+    background-color: rgb(249, 249, 3);
+}
+
+.box4{
+    background-color: rgb(255, 4, 4);
+}
+/* Footer ST */
+footer{
+    background: rgb(251, 173, 237);
+    grid-column: 1/-1;
+    text-align:center;
+}
+.fh1{
+    margin-top: 5px;
+    font-weight: bold;
+    font-family:initial;
+    font-size: 50px;
+    color: #ff43f6;
+}
+
+.pfull{
+    font-size: 6px;
+    padding: 32px;
+    position: relative;
+    margin-top: -35px;
+    color: black;
+}
+
+.ftext{
+    color: rebeccapurple;
+    margin-top: 5px;
+}
+
+.ficon a{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ficon a:hover{
+    color: red;
+    font-size: 2px;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+}
+.Copyright{
+    font-size: 8px;
+    color: black;
+    bottom: 0; margin-top: 1px;
+}
+
+/* Footer End */
+
